@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  \begin{minipage}{0.5\textwidth}
+    \begin{small}
+      In which the reasons for creating this package are laid bare for the
+      whole world to see and we encounter some usage guidelines.
+    \end{small}
+  \end{minipage}
+  \vspace{0.5cm}
+\end{center}
+
+\noindent This package contains a minimal, modern template for writing your
+thesis. While originally meant to be used for a Ph.\,D.\ thesis, you can
+equally well use it for your honour thesis, bachelor thesis, and so
+on---some adjustments may be necessary, though.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Why?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+I was not satisfied with the available templates for \LaTeX{} and wanted
+to heed the style advice given by people such as Robert
+Bringhurst~\cite{Bringhurst12} or Edward R.\
+Tufte~\cite{Tufte90,Tufte01}. While there \emph{are} some packages out
+there that attempt to emulate these styles, I found them to be either
+too bloated, too playful, or too constraining. This template attempts to
+produce a beautiful look without having to resort to any sort of hacks.
+I hope you like it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{How?}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The package tries to be easy to use. If you are satisfied with the
+default settings, just add
+%
+\begin{verbatim}
+\documentclass{mimosis}
+\end{verbatim}
+%
+at the beginning of your document. This is sufficient to use the class.
+It is possible to build your document using either \LaTeX|, \XeLaTeX, or
+\LuaLaTeX. I personally prefer one of the latter two because they make
+it easier to select proper fonts.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Features}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Package}      & \textbf{Purpose}\\
+    \midrule
+      \texttt{amsmath}          & Basic mathematical typography\\
+      \texttt{amsthm}           & Basic mathematical environments for proofs etc.\\
+      \texttt{booktabs}         & Typographically light rules for tables\\
+      \texttt{bookmarks}        & Bookmarks in the resulting PDF\\
+      \texttt{dsfont}           & Double-stroke font for mathematical concepts\\
+      \texttt{graphicx}         & Graphics\\
+      \texttt{hyperref}         & Hyperlinks\\
+      \texttt{multirow}         & Permits table content to span multiple rows or columns\\ 
+      \texttt{paralist}         & Paragraph~(`in-line') lists and compact enumerations\\
+      \texttt{scrlayer-scrpage} & Page headings\\
+      \texttt{setspace}         & Line spacing\\
+      \texttt{siunitx}          & Proper typesetting of units\\
+      \texttt{subcaption} & Proper sub-captions for figures\\
+    \bottomrule
+  \end{tabular}
+  \caption{%
+    A list of the most relevant packages required~(and automatically imported) by this template.
+  }
+  \label{tab:Packages}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The template automatically imports numerous convenience packages that
+aid in your typesetting process. \autoref{tab:Packages} lists the
+most important ones. Let's briefly discuss some examples below. Please
+refer to the source code for more demonstrations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Typesetting mathematics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This template uses \verb|amsmath| and \verb|amssymb|, which are the
+de-facto standard for typesetting mathematics. Use numbered equations
+using the \verb|equation| environment.
+%
+If you want to show multiple equations and align them, use the
+\verb|align| environment:
+%
+\begin{align}
+    V &:= \{ 1, 2, \dots \}\\
+    E &:= \big\{ \left(u,v\right) \mid \dist\left(p_u, p_v\right) \leq \epsilon \big\}
+\end{align}
+%
+Define new mathematical operators using \verb|\DeclareMathOperator|.
+Some operators are already pre-defined by the template, such the
+distance between two objects. Please see the template for some examples. 
+%
+Moreover, this template contains a correct differential operator. Use \verb|\d| to typeset the differential of integrals:
+%
+\begin{equation}
+  f(u) := \int_{v \in \domain}\dist(u,v)\d{v}
+\end{equation}
+%
+You can see that, as a courtesy towards most mathematicians, this
+template gives you the possibility to refer to the real numbers~$\real$
+and the domain~$\domain$ of some function. Take a look at the source for
+more examples. By the way, the template comes with spacing fixes for the
+automated placement of brackets.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Typesetting text}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Along with the standard environments, this template offers
+\verb|paralist| for lists within paragraphs.
+%
+Here's a quick example: The American constitution speaks, among others, of
+%
+\begin{inparaenum}[(i)]
+  \item life
+  \item liberty
+  \item the pursuit of happiness.
+\end{inparaenum}
+%
+These should be added in equal measure to your own conduct. To typeset
+units correctly, use the \verb|siunitx| package. For example, you might
+want to restrict your daily intake of liberty to \SI{750}{\milli\gram}.
+
+Likewise, as a small pet peeve of mine, I offer specific operators for \emph{ordinals}. Use \verb|\th| to typeset things like July~4\th correctly. Or, if you are referring to the 2\nd edition of a book, please use \verb|\nd|. Likewise, if you came in 3\rd in a marathon, use \verb|\rd|. This is my 1\st rule.
