@@ -104,10 +104,10 @@ Define new mathematical operators using \verb|\DeclareMathOperator|.
 Some operators are already pre-defined by the template, such the
 distance between two objects. Please see the template for some examples. 
 %
-Moreover, this template contains a correct differential operator. Use \verb|\d| to typeset the differential of integrals:
+Moreover, this template contains a correct differential operator. Use \verb|\diff| to typeset the differential of integrals:
 %
 \begin{equation}
-  f(u) := \int_{v \in \domain}\dist(u,v)\d{v}
+  f(u) := \int_{v \in \domain}\dist(u,v)\diff{v}
 \end{equation}
 %
 You can see that, as a courtesy towards most mathematicians, this
@@ -136,3 +136,19 @@ units correctly, use the \verb|siunitx| package. For example, you might
 want to restrict your daily intake of liberty to \SI{750}{\milli\gram}.
 
 Likewise, as a small pet peeve of mine, I offer specific operators for \emph{ordinals}. Use \verb|\th| to typeset things like July~4\th correctly. Or, if you are referring to the 2\nd edition of a book, please use \verb|\nd|. Likewise, if you came in 3\rd in a marathon, use \verb|\rd|. This is my 1\st rule.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Changing things}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Since this class heavily relies on the \verb|scrbook| class, you can use
+\emph{their} styling commands in order to change the look of things. For
+example, if you want to change the text in sections to \textbf{bold} you
+can just use
+%
+\begin{verbatim}
+  \setkomafont{sectioning}{\normalfont\bfseries}
+\end{verbatim}
+%
+at the end of the document preamble---you don't have to modify the class
+file for this. Please consult the source code for more information.
