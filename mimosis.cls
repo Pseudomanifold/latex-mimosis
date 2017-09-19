@@ -34,6 +34,12 @@
   \RequirePackage[utf8]{inputenc}
 \fi
 
+% Makes it possible to switch between different languages in the text
+% while keeping hyphenation rules correct. Should you add another one
+% in the list, please ensure that `english` is the last one. The last
+% language is used to control standard hyphenation.
+\usepackage[ngerman,french,english]{babel}
+
 \RequirePackage{csquotes} % Context-sensitive quotation marks
 \RequirePackage{makeidx}  % For creating indices
 \RequirePackage{xspace}   % For automatically "eating" spaces
@@ -74,6 +80,59 @@
 % Make sub-references using \subref being typeset with parentheses.
 % Otherwise, only the counter will be printed.
 \captionsetup{subrefformat=parens}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Glossaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage[%
+  acronym,
+  automake,
+  nogroupskip,
+  nopostdot,
+  nonumberlist,
+  toc,
+  ]{glossaries}
+
+% New style that prevents line-breaks between the full description and
+% the acronym. Furthermore, it ensures that the acronym is always
+% printed in an upright font.
+\newacronymstyle{long-short-mimosis}
+{%
+  \GlsUseAcrEntryDispStyle{long-short}%
+}%
+{%
+  \GlsUseAcrStyleDefs{long-short}%
+  \renewcommand*{\genacrfullformat}[2]{%
+    \glsentrylong{##1}##2~\textup{(\firstacronymfont{\glsentryshort{##1}})}%
+  }%
+  \renewcommand*{\Genacrfullformat}[2]{%
+    \Glsentrylong{##1}##2~\textup{(\firstacronymfont{\glsentryshort{##1}})}%
+  }%
+  \renewcommand*{\genplacrfullformat}[2]{%
+    \glsentrylongpl{##1}##2~\textup{(\firstacronymfont{\glsentryshortpl{##1}})}%
+  }%
+  \renewcommand*{\Genplacrfullformat}[2]{%
+    \Glsentrylongpl{##1}##2~\textup{(\firstacronymfont{\Glsentryshortpl{##1}})}%
+  }%
+}
+
+% A new glossary style that based on the long style of the glossaries
+% package. It ensures that descriptions and entries are aligned.
+\newglossarystyle{long-mimosis}{%
+  \setglossarystyle{long}
+
+  \renewcommand{\glossentry}[2]{%
+    \glsentryitem{##1}\glstarget{##1}{\glossentryname{##1}} &
+    \glossentrydesc{##1}\glspostdescription\space ##2\tabularnewline
+  }%
+}
+
+% Constrain the description width to enforce breaks.
+\setlength{\glsdescwidth}{10cm}
+
+\setacronymstyle{long-short-mimosis}
+\setglossarystyle{long-mimosis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Paragraph lists & compact enumerations
@@ -163,11 +222,21 @@
 \pagestyle{scrheadings}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Typefaces for sections
+% Typefaces for parts, chapters, and sections
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\partformat}{\huge\partname~\thepart\autodot}
+\renewcommand{\raggedpart}{\flushleft}
+
+\setkomafont{part}{\normalfont\huge\scshape}
 
 \setkomafont{sectioning}{\normalfont\scshape}
 \setkomafont{descriptionlabel}{\normalfont\bfseries}
 
 \setkomafont{caption}{\small}
 \setkomafont{captionlabel}{\usekomafont{caption}}
+
+% Large number for chapter
+\renewcommand*{\chapterformat}{%
+  \fontsize{50}{55}\selectfont\thechapter\autodot\enskip
+}
