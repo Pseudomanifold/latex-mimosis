@@ -34,28 +34,27 @@
   \RequirePackage[utf8]{inputenc}
 \fi
 
-\usepackage{csquotes}
+\RequirePackage{csquotes} % Context-sensitive quotation marks
+\RequirePackage{makeidx}  % For creating indices
+\RequirePackage{xspace}   % For automatically "eating" spaces
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Multi-line comments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \newcommand{\comment}[1]{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts & colours
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{xcolor}
-
-\definecolor{hd-red}  {RGB}{197, 13, 41}
-\definecolor{hd-brown}{RGB}{ 90, 15, 20}
-\definecolor{hd-beige}{RGB}{245,240,234}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Graphics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{graphicx}
+\RequirePackage{graphicx}
 \graphicspath{%
   {Figures/}
   {./}
@@ -100,19 +99,6 @@
 \RequirePackage{multirow}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Hyperlinks & bookmarks
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\RequirePackage[%
-  colorlinks = true,
-  citecolor  = hd-red,
-  linkcolor  = hd-red,
-  urlcolor   = hd-red,
-  ]{hyperref}
-
-\RequirePackage{bookmark}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Proper typesetting of units
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -150,7 +136,7 @@
 \newcommand{\real}  {\ensuremath{\mathds{R}}}
 
 % Proper differential operators
-\renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
+\newcommand{\diff}[1]{\ensuremath{\operatorname{d}\!{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ordinals
@@ -180,7 +166,7 @@
 % Typefaces for sections
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setkomafont{sectioning}{\normalfont\bfseries}
+\setkomafont{sectioning}{\normalfont\scshape}
 \setkomafont{descriptionlabel}{\normalfont\bfseries}
 
 \setkomafont{caption}{\small}
