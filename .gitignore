@@ -1,3 +1,6 @@
+*.acn
+*.acr
+*.alg
 *.aux
 *.auxlock
 *.bak
@@ -5,7 +8,11 @@
 *.blg
 *.dvi
 *.fls
+*.glg
+*.glo
+*.gls
 *.idx
+*.ist
 *.ilg
 *.ind
 *.log
@@ -15,6 +22,9 @@
 *.sav
 *.swp
 *.toc
+
+*.run.xml
+*-blx.bib
 
 *_latexmk
 
