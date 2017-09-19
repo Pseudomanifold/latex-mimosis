@@ -70,9 +70,11 @@
 \ifxetexorluatex
   \setmainfont{Minion Pro}
 \else
-  \usepackage[osf]{ebgaramond}
+  \usepackage[lf]{ebgaramond}
   \usepackage[oldstyle,scale=0.7]{sourcecodepro}
 \fi
+
+\renewcommand{\th}{\textsuperscript{\textup{th}}\xspace}
 
 \newacronym[description={Principal component analysis}]{PCA}{PCA}{principal component analysis}
 \newacronym                                            {SNF}{SNF}{Smith normal form}
