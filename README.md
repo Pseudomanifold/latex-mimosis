@@ -26,6 +26,17 @@ uses A4 paper size by default.
 - Use `latexmk` to build the document using `pdflatex`
 - Write a nice thesis in LaTeX
 
+# How to customize
+
+The template is based on the excellent [`koma-script`](https://ctan.org/pkg/koma-script)
+class. You can thus change the appearance of many things quite easily.
+For example, if you want the thesis to use the `letter` paper format,
+just add
+
+    \KOMAoptions{paper=letter}
+
+in the preamble of the document and recompile.
+
 # Example
 
 The repository comes with an example file called `Thesis.tex`. Please
