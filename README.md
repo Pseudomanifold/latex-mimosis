@@ -5,6 +5,7 @@ dissertations and other university documents.
 
 For the impatient or curious: [this is what the template looks
 like](Thesis.pdf).
+You may also want to take a look at my [my Ph.D. dissertation](http://bastian.rieck.me/research/Dissertation_Rieck_2017.pdf), which uses a predecessor of this template.
 
 # Advantages
 
@@ -14,7 +15,11 @@ This template aims to be&hellip;
 - modern: typographically pleasing
 
 It is specifically suited for the European education system because it
-uses A4 paper size by default.
+uses A4 paper size by default&mdash;this can be easily adjusted to fit
+your personal needs, though&nbsp;(see below).
+
+The class is based on [`KOMA-script`](komascript.de), so it should be
+flexible enough to suit virtually any purpose.
 
 # How to use
 
@@ -55,3 +60,10 @@ file.
 
 If you require additional features, find some bugs, or just have some
 generic inquiries, please just open an issue in this repository.
+
+# Contributors
+
+Here is a list of contributors:
+
+- [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
+- [Bastian Rieck (Submanifold)](https://github.com/Submanifold): original creator and maintainer
