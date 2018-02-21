@@ -33,7 +33,7 @@ flexible enough to suit virtually any purpose.
 
 # How to customize
 
-The template is based on the excellent [`koma-script`](https://ctan.org/pkg/koma-script)
+The template is based on the excellent [`KOMA-script`](https://ctan.org/pkg/koma-script)
 class. You can thus change the appearance of many things quite easily.
 For example, if you want the thesis to use the `letter` paper format,
 just add
