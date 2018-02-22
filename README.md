@@ -56,6 +56,62 @@ distribution might already have this command. If so, you can use
 in the main directory of this repository in order to build the example
 file.
 
+## Required packages for the class
+
+The template uses various LaTeX packages that you should install using
+your favourite LaTeX distribution. Some distributions already do this
+automatically when you compile the document for the first time. Others
+require manual updates. Please refer to the documentation of your LaTeX
+distribution for more details.
+
+Here is a list of packages that you need&nbsp;(I am using the package
+name as specified on CTAN):
+
+- [`amsmath`](https://ctan.org/pkg/amsmath)
+- [`amsthm`](https://ctan.org/pkg/amsthm)
+- [`booktabs`](https://ctan.org/pkg/booktabs)
+- [`csquotes`](https://ctan.org/pkg/csquotes)
+- [`dsfont`](https://ctan.org/pkg/dsfont)
+- [`glossaries`](https://ctan.org/pkg/glossaries)
+- [`graphicx`](https://ctan.org/pkg/graphicx)
+- [`fontspec`](https://ctan.org/pkg/fontspec)&nbsp;(only for LuaTeX and XeTeX users)
+- [`ifluatex`](https://ctan.org/pkg/ifluatex)
+- [`ifpdf`](https://ctan.org/pkg/ifpdf)
+- [`ifxetex`](https://ctan.org/pkg/ifxetex)
+- [`inputenc`](https://ctan.org/pkg/inputenc)&nbsp;(only for pdfTeX users)
+- [`koma-script`](https://ctan.org/pkg/koma-script)
+- [`makeidx`](https://ctan.org/pkg/makeidx)
+- [`paralist`](https://ctan.org/pkg/paralist)
+- [`setspace`](https://ctan.org/pkg/setspace)
+- [`siunitx`](https://ctan.org/pkg/siunitx)
+- [`subcaption`](https://ctan.org/pkg/subcaption)
+- [`xcolor`](https://ctan.org/pkg/xcolor)
+- [`xspace`](https://ctan.org/pkg/xspace)
+
+## Required packages for the example document
+
+Typesetting the example document requires an additional set of packages.
+Feel free to remove them, though&mdash;they are only used for showcasing
+how a real document might look like.
+
+- [`biblatex`](https://ctan.org/pkg/biblatex)
+- [`bookmark`](https://ctan.org/pkg/bookmark)
+- [`etoolbox`](https://ctan.org/pkg/etoolbox)
+- [`hyperref`](https://ctan.org/pkg/hyperref)
+- [`metalogo`](https://ctan.org/pkg/metalogo)
+
+
+For pdfTeX users:
+
+- [`ebgaramond`](https://ctan.org/pkg/ebgaramond)
+- [`sourcecodepro`](https://ctan.org/pkg/sourcecodepro)
+
+For LuaTeX or XeTeX users:
+
+- The Minion Pro font; please use your favourite search engine for this
+  or change the line `\setmainfont{Minion Pro}` in the preamble to
+  another font&nbsp;(or leave it out entirely)
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
