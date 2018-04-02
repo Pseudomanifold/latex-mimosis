@@ -112,6 +112,12 @@ For LuaTeX or XeTeX users:
   or change the line `\setmainfont{Minion Pro}` in the preamble to
   another font&nbsp;(or leave it out entirely)
 
+# License
+
+The template uses the MIT license. Please see the file
+[`LICENSE.md`](LICENSE.md) in the main directory of the repository for
+more details.
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
