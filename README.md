@@ -127,5 +127,6 @@ generic inquiries, please just open an issue in this repository.
 
 Here is a list of contributors:
 
+- [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Bastian Rieck (Submanifold)](https://github.com/Submanifold): original creator and maintainer
