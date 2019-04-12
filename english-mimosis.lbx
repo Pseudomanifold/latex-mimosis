@@ -1,0 +1,26 @@
+\ProvidesFile{english-mimosis.lbx}
+\InheritBibliographyExtras{english}
+
+% Do not abbreviate "technical report".
+\DeclareBibliographyStrings{%
+  inherit      = {english},
+  techreport   = {{technical report}{technical report}},
+}
+
+% Use superscripts whenever appropriate and possible
+\DeclareBibliographyExtras{%
+  \protected\def\mkbibordinal#1{%
+    \begingroup%
+    \@tempcnta0#1\relax\number\@tempcnta%
+    \@whilenum\@tempcnta>100\do{\advance\@tempcnta-100\relax}%
+    \ifnum\@tempcnta>20%
+      \@whilenum\@tempcnta>9\do{\advance\@tempcnta-10\relax}%
+    \fi%
+    \mkbibsuperscript{\ifcase\@tempcnta th\or st\or nd\or rd\else th\fi}%
+    \endgroup}%
+  \protected\def\mkbibmascord{\mkbibordinal}%
+  \protected\def\mkbibfemord{\mkbibordinal}%
+  \protected\def\mkbibneutord{\mkbibordinal}%
+}
+
+\endinput
