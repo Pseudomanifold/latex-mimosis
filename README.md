@@ -123,10 +123,19 @@ more details.
 If you require additional features, find some bugs, or just have some
 generic inquiries, please just open an issue in this repository.
 
+# Users
+
+The following documents have been typeset with this template&nbsp;(or
+a slightly modified variant of it):
+
+- S. Almasian, [Learning Joint Vector Representations of Words and Named Entities](https://github.com/satya77/Thesis_Entity_Embeddings/blob/master/MasterThesis_SatyaAlmasian.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
+- P. Jung, [On the Frame of Reference in Flow Visualization](https://github.com/JungStar/master_thesis/blob/master/Thesis.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2019
+- B. Rieck, [Persistent Homology in Multivariate Data Visualization](http://archiv.ub.uni-heidelberg.de/volltextserver/22914/1/Dissertation.pdf), Ph.D.&thinsp;thesis, Heidelberg University, 2017
+
 # Contributors
 
 Here is a list of contributors:
 
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
-- [Bastian Rieck (Submanifold)](https://github.com/Submanifold): original creator and maintainer
+- [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
