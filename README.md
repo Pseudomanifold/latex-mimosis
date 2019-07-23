@@ -141,4 +141,4 @@ Here is a list of contributors:
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
-- [TonyY](https://github.com/toooonyy): `latexmkrc` updates
+- [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes
