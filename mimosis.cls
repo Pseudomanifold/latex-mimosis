@@ -1,9 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mimosis}[2017/08/01 Minimal modern thesis class]
 
-\LoadClass[paper=a4,
+\LoadClass[a4paper,
            twoside,
-           pagesize,
            11pt,
            DIV=10,                % TODO: Make configurable
            BCOR=10mm,             % TODO: Make configurable
