@@ -5,6 +5,7 @@
 *.auxlock
 *.bak
 *.bbl
+*.bcf
 *.blg
 *.dvi
 *.fls
