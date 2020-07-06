@@ -129,6 +129,29 @@ The template uses the MIT license. Please see the file
 [`LICENSE.md`](LICENSE.md) in the main directory of the repository for
 more details.
 
+# Known issues
+
+The superscript citation style is not compatible with all citation
+styles. For example, to use the citation with `chem-angew`, please
+use an adjusted `\supercite` command such as this one:
+
+```latex
+\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
+{\bibopenbracket%
+	\usebibmacro{cite:init}%
+	\let\multicitedelim=\supercitedelim
+	\usebibmacro{prenote}}
+{\usebibmacro{citeindex}%
+	\usebibmacro{cite:comp}}
+{}
+{\usebibmacro{cite:dump}%
+	\usebibmacro{postnote}%
+	\bibclosebracket%
+}
+```
+
+Thanks to Carlo Botha for this contribution!
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
@@ -139,6 +162,7 @@ generic inquiries, please just open an issue in this repository.
 Here is a list of contributors:
 
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
+- Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
 - [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes; `hyperref` fixes
