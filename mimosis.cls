@@ -1,11 +1,14 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mimosis}[2017/08/01 Minimal modern thesis class]
 
+\PassOptionsToPackage{
+  DIV  = 10,    % TODO: Make configurable
+  BCOR = 10mm,  % TODO: Make configurable
+}{typearea}
+
 \LoadClass[a4paper,
            twoside,
            11pt,
-           DIV=10,                % TODO: Make configurable
-           BCOR=10mm,             % TODO: Make configurable
            cleardoublepage=empty,
            numbers=noenddot,
            titlepage,
