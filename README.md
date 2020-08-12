@@ -178,4 +178,5 @@ Here is a list of contributors:
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
+- [Diego A. Rodriquez (diarodriguezva)](https://github.com/diarodriguezv): support with `ebgaramond` updates
 - [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes; `hyperref` fixes
