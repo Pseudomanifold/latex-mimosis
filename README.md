@@ -111,7 +111,6 @@ how a real document might look like.
 - [`hyperref`](https://ctan.org/pkg/hyperref)
 - [`metalogo`](https://ctan.org/pkg/metalogo)
 
-
 For pdfTeX users:
 
 - [`ebgaramond`](https://ctan.org/pkg/ebgaramond)
@@ -151,6 +150,20 @@ use an adjusted `\supercite` command such as this one:
 ```
 
 Thanks to Carlo Botha for this contribution!
+
+# Frequently asked questions (FAQ)
+
+1. Does the template support bold fonts?
+
+Yes. First of all, you can change the default font (my personal
+suggestion is to use the `fontspec` package and `xelatex` or `lualatex`;
+then, changing your font is as easy as using `\setmainfont`). Second,
+note that in older TeX distributions, the font &lsquo;EB
+Garamond&rsquo;, shipped in the `ebgaramond` package, does *not* ship
+with a bold variant. Consider updating your TeX distribution or manually
+replacing the font. This is *not* an issue with this
+package&mdash;please see [issue #10](/../../issues/10) for more
+information.
 
 # Contributing
 
