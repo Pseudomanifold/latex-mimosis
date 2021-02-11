@@ -151,6 +151,47 @@ use an adjusted `\supercite` command such as this one:
 
 Thanks to Carlo Botha for this contribution!
 
+# Extensions
+
+## Table of contents per chapter
+
+If you want a small table of contents for each chapter, update
+`mimosis.cls` as follows:
+
+```latex
+\usepackage[automark,headsepline,plainheadsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\automark[section]{chapter}
+
+\lehead*{\headmark}
+\cehead{}
+\rehead{\headmark}
+
+\lohead{\headmark}
+\cohead{}
+\rohead*{\headmark}
+
+\newpairofpagestyles[scrheadings]{chapter}{%
+	\KOMAoptions{headsepline=false,plainheadsepline=false}%
+	\ihead*{}%
+	\ohead*{}%
+}
+
+\newpairofpagestyles[scrheadings]{part}{%
+	\KOMAoptions{headsepline=false,plainheadsepline=false}%
+	\ihead*{}%
+	\ohead*{}%
+}
+
+\renewcommand*\chapterpagestyle{chapter}
+
+\renewcommand*\partpagestyle{part}
+```
+
+This extension was contributed by [Nikos Antoniadis](https://github.com/nikosantoniadis) in [issue 16](https://github.com/Pseudomanifold/latex-mimosis/issues/16).
+If you want to add this as proper extension or configurable parameter,
+please let me know!
+
 # Frequently asked questions (FAQ)
 
 1. Does the template support bold fonts?
@@ -174,6 +215,7 @@ generic inquiries, please just open an issue in this repository.
 
 Here is a list of contributors:
 
+- [Nikos Antoniadis (nikosantoniadis)](https://github.com/nikosantoniadis): mini-TOC extension
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
