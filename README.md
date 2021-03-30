@@ -34,6 +34,10 @@ flexible enough to suit virtually any purpose.
 
 # How to use
 
+If you are using Overleaf, checkout [`latex-mimosis`](https://www.overleaf.com/latex/templates/latex-mimosis/syptyjpjrzzj)
+in the gallery. If you want to use the template locally, follow these
+steps:
+
 - Clone this repository
 - Copy the file `mimosis.cls` into your document directory
 - Add `\documentclass{mimosis}` to your document preamble
