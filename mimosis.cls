@@ -89,7 +89,6 @@
 
 \RequirePackage[%
   acronym,
-  automake,
   nogroupskip,
   nopostdot,
   nonumberlist,
