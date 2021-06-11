@@ -219,7 +219,9 @@ generic inquiries, please just open an issue in this repository.
 
 Here is a list of contributors:
 
+
 - [Nikos Antoniadis (nikosantoniadis)](https://github.com/nikosantoniadis): mini-TOC extension
+- [bottom-bracket](https://github.com/bottom-bracket): `automake` and `standalone` compatibility improvements
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
