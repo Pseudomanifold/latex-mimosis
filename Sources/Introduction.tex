@@ -47,6 +47,41 @@ It is possible to build your document using either \LaTeX|, \XeLaTeX, or
 it easier to select proper fonts.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Making this template \emph{yours}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Prior to using this template, the first thing you want to do is probably
+a little bit of customisation. You can achieve quick changes in look and
+feel by picking your own fonts. With the \verb|fontspec| package loaded
+and  \XeLaTeX or \LuaLaTeX as your compiler, this is pretty simple:
+%
+\begin{verbatim}
+\setmainfont{Your main font}
+\setsansfont{Your sans-serif font}
+\setmonofont{Your monospaced font}
+\end{verbatim}
+%
+Make sure to select nice combinations of that are pleasing to
+\emph{your} eyes---this is your document and it should reflect your own
+style. Make sure to specify font names as they are provided by your
+system. For instance, you might want to use the following combination:
+%
+\begin{verbatim}
+\setmainfont{Baskerville}
+\setsansfont[Scale=MatchLowercase]{IBM Plex Sans}
+\setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
+\end{verbatim}
+%
+If these fonts exist on your system, your normal text will look
+{\fontspec{Baskerville}{a little bit different from the other font used
+in this example PDF}}, while your sans-serif font {\fontspec[Scale=MatchLowercase]{IBM Plex Sans}will 
+pair nicely with your} {\fontspec[Scale=MatchLowercase]{IBM Plex Mono}{monospaced font}}.
+%
+You can also remove the \verb|Scale| directive, but I find that most
+fonts pair better if they are adjusted in size a little bit. Experiment
+with it until you finds a combination that you enjoy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Features}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
