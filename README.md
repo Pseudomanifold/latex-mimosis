@@ -43,10 +43,42 @@ steps:
 - Add `\documentclass{mimosis}` to your document preamble
 - Optionally copy the file `Thesis.tex` and the files in `Sources` as
   a starting point
-- Use `latexmk` to build the document using `pdflatex`
+- Use `latexmk` to build the document
 - Write a nice thesis in LaTeX
 
-# How to customize
+While you can customise everything to your heart's desire, you should
+probably start with changing the fonts. I strongly recommend to use
+`xelatex` or `lualatex` to build the document, as this will make font
+selection almost trivial. Essentially, you only require these three
+commands&nbsp;(I took the liberty to specify some example fonts):
+
+```latex
+\setmainfont{Baskerville}
+\setsansfont{IBM Plex Sans}
+\setmonofont{IBM Plex Mono}
+```
+
+Put these commands in your main file such as `Thesis.tex` and be sure to
+remove this code block here:
+
+```latex
+\ifxetexorluatex
+  \setmainfont{Minion Pro}
+\else
+  \usepackage[lf]{ebgaramond}
+  \usepackage[oldstyle,scale=0.7]{sourcecodepro}
+  \singlespacing
+\fi
+```
+
+Note that the document will work fine nevertheless, but most people
+either dislike the Minion Pro font or do not have this font available.
+
+**Overleaf users**: If you are using Overleaf to build your thesis, you
+are restricted by their choice of fonts. Please read [this document](https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F)
+for more information about which fonts are available.
+
+# How to customise
 
 The template is based on the excellent [`KOMA-script`](https://ctan.org/pkg/koma-script)
 class. You can thus change the appearance of many things quite easily.
