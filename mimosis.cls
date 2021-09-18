@@ -162,7 +162,7 @@
 % Proper typesetting of units
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\RequirePackage[binary-units=true]{siunitx}
+\RequirePackage{siunitx}
 
 \sisetup{%
   detect-all           = true,
@@ -170,7 +170,6 @@
   detect-mode          = true,
   detect-shape         = true,
   detect-weight        = true,
-  detect-inline-weight = math,
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
