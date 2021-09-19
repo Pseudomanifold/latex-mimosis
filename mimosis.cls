@@ -165,11 +165,14 @@
 \RequirePackage{siunitx}
 
 \sisetup{%
-  detect-all           = true,
-  detect-family        = true,
-  detect-mode          = true,
-  detect-shape         = true,
-  detect-weight        = true,
+  mode = match,
+  propagate-math-font = true,
+  reset-math-version = false,
+  reset-text-family = false,
+  reset-text-series = false,
+  reset-text-shape = false,
+  text-family-to-math = true,
+  text-series-to-math = true,
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
