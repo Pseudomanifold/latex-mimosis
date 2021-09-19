@@ -15,19 +15,13 @@
            toc=bibliography,
            toc=index,]{scrbook}
 
-\RequirePackage{ifpdf}
-\RequirePackage{ifxetex}
-\RequirePackage{ifluatex}
-
-\newif\ifxetexorluatex
+\RequirePackage{iftex}
+\newif\ifxetexorluatex\xetexorluatexfalse
 \ifxetex
   \xetexorluatextrue
-\else
-  \ifluatex
-    \xetexorluatextrue
-  \else
-    \xetexorluatexfalse
-  \fi
+\fi
+\ifluatex
+  \xetexorluatextrue
 \fi
 
 \ifxetexorluatex
