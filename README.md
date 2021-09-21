@@ -63,16 +63,14 @@ remove this code block here:
 
 ```latex
 \ifxetexorluatex
-  \setmainfont{Minion Pro}
+  % ...
 \else
-  \usepackage[lf]{ebgaramond}
-  \usepackage[oldstyle,scale=0.7]{sourcecodepro}
-  \singlespacing
+  % ...
 \fi
 ```
 
-Note that the document will work fine nevertheless, but most people
-either dislike the Minion Pro font or do not have this font available.
+Note that the document will work fine nevertheless, but some people
+dislike the default fonts or do not have them installed.
 
 **Overleaf users**: If you are using Overleaf to build your thesis, you
 are restricted by their choice of fonts. Please read [this document](https://www.overleaf.com/learn/latex/Questions/Which_OTF_or_TTF_fonts_are_supported_via_fontspec%3F)
@@ -154,9 +152,11 @@ For pdfTeX users:
 
 For LuaTeX or XeTeX users:
 
-- The Minion Pro font; please use your favourite search engine for this
-  or change the line `\setmainfont{Minion Pro}` in the preamble to
-  another font&nbsp;(or leave it out entirely)
+- The EB Garamond font
+- The Source Code Pro font
+
+If you installed the packages above, everything should work
+automatically.
 
 # License
 
