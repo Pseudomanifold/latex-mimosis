@@ -58,11 +58,6 @@
 
 \ifxetexorluatex
   \setmainfont{Minion Pro}
-  % Most fonts don't support ordinals, but if yours does, this may give better results:
-  \renewcommand{\st}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{st}}\xspace}
-  \renewcommand{\rd}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{rd}}\xspace}
-  \renewcommand{\nd}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{nd}}\xspace}
-  \renewcommand{\th}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{th}}\xspace}
 \else
   \usepackage[lf]{ebgaramond}
   \usepackage[oldstyle,scale=0.7]{sourcecodepro}
