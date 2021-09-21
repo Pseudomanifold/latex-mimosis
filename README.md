@@ -246,7 +246,7 @@ please let me know!
    \
    The options of this package were recently updated. The setup has now
    been removed to simplify the package. For the new version of the
-   package, the following options are suggested by [Holger Dell](https://github.com/holgerdell):\
+   package, the following options are suggested by [Holger Dell](https://github.com/holgerdell):
    ```latex
    \sisetup{%
      mode                = match,
