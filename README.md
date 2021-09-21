@@ -270,6 +270,20 @@ please let me know!
    }
    ```
 
+3. I have a font with special support for ordinal numbers. How can I use
+   them?\
+   \
+   The easiest way is to override the definitions and specify the
+   required font features:
+   ```latex
+   \renewcommand{\st}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{st}}\xspace}
+   \renewcommand{\rd}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{rd}}\xspace}
+   \renewcommand{\nd}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{nd}}\xspace}
+   \renewcommand{\th}{{\addfontfeatures{VerticalPosition=Ordinal}\textup{th}}\xspace}
+   ```
+   Notice that this will not work for most fonts. If you are unsure,
+   just leave the default values in place.
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
