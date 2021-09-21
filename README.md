@@ -230,17 +230,46 @@ please let me know!
 
 # Frequently asked questions (FAQ)
 
-1. Does the template support bold fonts?
+1. Does the template support bold fonts?\
+   \
+   Yes. First of all, you can change the default font (my personal
+   suggestion is to use the `fontspec` package and `xelatex` or `lualatex`;
+   then, changing your font is as easy as using `\setmainfont`). Second,
+   note that in older TeX distributions, the font &lsquo;EB
+   Garamond&rsquo;, shipped in the `ebgaramond` package, does *not* ship
+   with a bold variant. Consider updating your TeX distribution or manually
+   replacing the font. This is *not* an issue with this
+   package&mdash;please see [issue #10](/../../issues/10) for more
+   information.
 
-Yes. First of all, you can change the default font (my personal
-suggestion is to use the `fontspec` package and `xelatex` or `lualatex`;
-then, changing your font is as easy as using `\setmainfont`). Second,
-note that in older TeX distributions, the font &lsquo;EB
-Garamond&rsquo;, shipped in the `ebgaramond` package, does *not* ship
-with a bold variant. Consider updating your TeX distribution or manually
-replacing the font. This is *not* an issue with this
-package&mdash;please see [issue #10](/../../issues/10) for more
-information.
+2. How do I use `siunitx`?\
+   \
+   The options of this package were recently updated. The setup has now
+   been removed to simplify the package. For the new version of the
+   package, the following options are suggested by @holgerdell:\
+   \
+   ```latex
+   \sisetup{%
+     mode                = match,
+     propagate-math-font = true,
+     reset-math-version  = false,
+     reset-text-family   = false,
+     reset-text-series   = false,
+     reset-text-shape    = false,
+     text-family-to-math = true,
+     text-series-to-math = true,
+   }
+   ```\
+   If this does not work, you can also fall back to the older settings:
+   ```latex
+   \sisetup{%
+     detect-all    = true,
+     detect-family = true,
+     detect-mode   = true,
+     detect-shape  = true,
+     detect-weight = true,
+   }
+   ```
 
 # Contributing
 
@@ -250,7 +279,6 @@ generic inquiries, please just open an issue in this repository.
 # Contributors
 
 Here is a list of contributors:
-
 
 - [Nikos Antoniadis (nikosantoniadis)](https://github.com/nikosantoniadis): mini-TOC extension
 - [bottom-bracket](https://github.com/bottom-bracket): `automake` and `standalone` compatibility improvements
