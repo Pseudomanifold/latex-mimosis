@@ -159,17 +159,6 @@
 
 \RequirePackage{siunitx}
 
-\sisetup{%
-  mode                = match,
-  propagate-math-font = true,
-  reset-math-version  = false,
-  reset-text-family   = false,
-  reset-text-series   = false,
-  reset-text-shape    = false,
-  text-family-to-math = true,
-  text-series-to-math = true,
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
