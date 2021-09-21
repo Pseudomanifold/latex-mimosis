@@ -246,8 +246,7 @@ please let me know!
    \
    The options of this package were recently updated. The setup has now
    been removed to simplify the package. For the new version of the
-   package, the following options are suggested by @holgerdell:\
-   \
+   package, the following options are suggested by [Holger Dell](https://github.com/holgerdell):\
    ```latex
    \sisetup{%
      mode                = match,
@@ -259,7 +258,7 @@ please let me know!
      text-family-to-math = true,
      text-series-to-math = true,
    }
-   ```\
+   ```
    If this does not work, you can also fall back to the older settings:
    ```latex
    \sisetup{%
@@ -285,6 +284,7 @@ Here is a list of contributors:
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
+- [Holger Dell (holgerdell)](https://github.com/holgerdell): numerous simplifications of the main template; compatibility updates
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
 - [Diego A. Rodriquez (diarodriguezva)](https://github.com/diarodriguezv): support with `ebgaramond` updates
 - [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes; `hyperref` fixes
