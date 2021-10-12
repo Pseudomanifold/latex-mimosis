@@ -284,8 +284,7 @@ please let me know!
    Notice that this will not work for most fonts. If you are unsure,
    just leave the default values in place.
 
-4. I want to use standard TeX fonts, but they look weird. (See #29 for
-   more details).\
+4. I want to use standard TeX fonts, but they look weird. (See [issue #29](https://github.com/Pseudomanifold/latex-mimosis/issues/29) for more details).\
    \
    This could be related to the encoding if you are using `pdflatex`.
    Either consider using a better font, such as `lmodern` (to be found
