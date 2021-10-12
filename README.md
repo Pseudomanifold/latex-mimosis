@@ -284,6 +284,18 @@ please let me know!
    Notice that this will not work for most fonts. If you are unsure,
    just leave the default values in place.
 
+4. I want to use standard TeX fonts, but they look weird. (See #29 for
+   more details).\
+   \
+   This could be related to the encoding if you are using `pdflatex`.
+   Either consider using a better font, such as `lmodern` (to be found
+   in the package with the same name), or use a different encoding:
+   ```latex
+   \usepackage[OT1]{fontenc}
+   ```
+   This might cause problems when copying text from the template,
+   though. The better solution is to use `lmodern`.
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
