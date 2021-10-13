@@ -5,7 +5,7 @@ dissertations and other university documents.
 
 For the impatient or curious: [this is what the template looks
 like](Thesis.pdf).
-You may also want to take a look at my [my Ph.D. dissertation](http://bastian.rieck.me/research/Dissertation_Rieck_2017.pdf), which uses a predecessor of this template.
+You may also want to take a look at [my Ph.D. dissertation](http://bastian.rieck.me/research/Dissertation_Rieck_2017.pdf), which uses a predecessor of this template.
 
 # Users
 
