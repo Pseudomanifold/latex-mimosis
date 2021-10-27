@@ -284,7 +284,7 @@ please let me know!
    Notice that this will not work for most fonts. If you are unsure,
    just leave the default values in place.
 
-4. I want to use standard TeX fonts, but they look weird. (See [issue #29](https://github.com/Pseudomanifold/latex-mimosis/issues/29) for more details).\
+4. I want to use standard TeX fonts, but they look weird. (See [issue #29](https://github.com/Pseudomanifold/latex-mimosis/issues/29) for more details)\
    \
    This could be related to the encoding if you are using `pdflatex`.
    Either consider using a better font, such as `lmodern` (to be found
@@ -294,6 +294,15 @@ please let me know!
    ```
    This might cause problems when copying text from the template,
    though. The better solution is to use `lmodern`.
+
+5. How can I ensure that the font for equations matches the main font?\
+   \
+   This depends a lot on your font selection. If you are using
+   `xelatex`, consider using the `mathspec` package. Else, check that
+   a package is available that provides maths support. For EB Garamond,
+   the `unicode-math` package can be used, for instance. (See [issue
+   #33](https://github.com/Pseudomanifold/latex-mimosis/issues/33) for
+   a brief discussion)
 
 # Contributing
 
@@ -309,6 +318,7 @@ Here is a list of contributors:
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
+- [Michaël Defferrard (mdeff)](https://github.com/mdeff): matching fonts for mathematics and text
 - [Holger Dell (holgerdell)](https://github.com/holgerdell): numerous simplifications of the main template; compatibility updates
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
 - [Diego A. Rodriquez (diarodriguezva)](https://github.com/diarodriguezv): support with `ebgaramond` updates
