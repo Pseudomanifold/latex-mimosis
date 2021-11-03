@@ -185,15 +185,6 @@
 \newcommand{\diff}[1]{\ensuremath{\operatorname{d}\!{#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Ordinals
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\newcommand  {\st}{\textsuperscript{\textup{st}}\xspace}
-\newcommand  {\rd}{\textsuperscript{\textup{rd}}\xspace}
-\newcommand  {\nd}{\textsuperscript{\textup{nd}}\xspace}
-\renewcommand{\th}{\textsuperscript{\textup{th}}\xspace}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Penalties
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
