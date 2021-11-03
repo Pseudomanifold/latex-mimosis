@@ -87,6 +87,24 @@
 \makeglossaries
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ordinals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\@ifundefined{st}{%
+  \newcommand{\st}{\textsuperscript{\textup{st}}\xspace}
+}{}
+\@ifundefined{rd}{%
+  \newcommand{\rd}{\textsuperscript{\textup{rd}}\xspace}
+}{}
+\@ifundefined{nd}{%
+  \newcommand{\nd}{\textsuperscript{\textup{nd}}\xspace}
+}{}
+\makeatother
+
+\renewcommand{\th}{\textsuperscript{\textup{th}}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Incipit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
