@@ -315,13 +315,13 @@ generic inquiries, please just open an issue in this repository.
 
 # Testimonials
 
-> I like it!
+> I like it!\
 &mdash; My mum
 
-> Garish and overproduced.
+> Garish and overproduced.\
 &mdash; Some rando on social media
 
-> Nice and clean!
+> Nice and clean!\
 &mdash; [`utopcell` on Hacker News](https://news.ycombinator.com/item?id=16414851)
 
 # Contributors
