@@ -15,8 +15,10 @@ template&nbsp;(or a slightly modified variant of it):
 
 - S. Almasian, [Learning Joint Vector Representations of Words and Named Entities](https://github.com/satya77/Thesis_Entity_Embeddings/blob/master/MasterThesis_SatyaAlmasian.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
 - K. Hanser, [Visualization of Coherence in Meteorological Data](https://github.com/hanserK/master_thesis/blob/master/Thesis_Karsten_Hanser.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
-- P. Jung, [On the Frame of Reference in Flow Visualization](https://github.com/JungStar/master_thesis/blob/master/Thesis.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2019
 - B. Rieck, [Persistent Homology in Multivariate Data Visualization](http://archiv.ub.uni-heidelberg.de/volltextserver/22914/1/Dissertation.pdf), Ph.D.&thinsp;thesis, Heidelberg University, 2017
+
+Please open a pull request if you want your document to be listed here,
+and consider acknowledging this repository.
 
 # Advantages
 
