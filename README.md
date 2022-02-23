@@ -311,6 +311,17 @@ please let me know!
 If you require additional features, find some bugs, or just have some
 generic inquiries, please just open an issue in this repository.
 
+# Testimonials
+
+> I like it!
+&mdash; My mum
+
+> Garish and overproduced.
+&mdash; Some rando on social media
+
+> Nice and clean!
+&mdash; [`utopcell` on Hacker News](https://news.ycombinator.com/item?id=16414851)
+
 # Contributors
 
 Here is a list of contributors:
