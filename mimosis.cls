@@ -37,7 +37,7 @@
 % language is used to control standard hyphenation.
 \usepackage[ngerman,french,english]{babel}
 
-\RequirePackage{csquotes} % Context-sensitive quotation marks
+\RequirePackage[autostyle=true]{csquotes} % Context-sensitive quotation marks
 \RequirePackage{makeidx}  % For creating indices
 \RequirePackage{xspace}   % For automatically "eating" spaces
 
