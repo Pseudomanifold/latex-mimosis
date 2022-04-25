@@ -94,8 +94,10 @@ with it until you finds a combination that you enjoy.
     \midrule
       \texttt{amsmath}          & Basic mathematical typography\\
       \texttt{amsthm}           & Basic mathematical environments for proofs etc.\\
+      \texttt{babel}            & Language settings\\
       \texttt{booktabs}         & Typographically light rules for tables\\
       \texttt{bookmarks}        & Bookmarks in the resulting PDF\\
+      \texttt{csquotes}         & Language-specific quotation marks\\
       \texttt{dsfont}           & Double-stroke font for mathematical concepts\\
       \texttt{graphicx}         & Graphics\\
       \texttt{hyperref}         & Hyperlinks\\
@@ -175,6 +177,19 @@ Likewise, as a small pet peeve of mine, I offer specific operators for
 correctly. Or, if you are referring to the 2\nd edition of a book,
 please use \verb|\nd|. Likewise, if you came in 3\rd in a marathon, use
 \verb|\rd|. This is my 1\st rule.
+
+If you want to write a text in German and use German hyphenation rules, set the language of your text to german using \verb|\selectlanguage{ngerman}|, or add
+\begin{verbatim}
+\PassOptionsToPackage{spanish}{babel}
+\end{verbatim}
+before the \verb|\documentclass| command to load a specific language. The languages \verb|ngerman|, \verb|french|, and \verb|english| are loaded by default, with \verb|english| being selected.
+
+Quotation marks can be typeset using the \verb|\enquote{...}| command from the \verb|csquotes| package, which is preloaded by \verb|latex-mimosis|.
+Depending on the currently selected language, quotes will look like \enquote{this},
+\selectlanguage{ngerman}\enquote{this}\selectlanguage{english},
+or
+\selectlanguage{french}\enquote{this}\selectlanguage{english}.
+One must never use "ASCII" quotation marks or even 'apostrophe' symbols.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Changing things}
