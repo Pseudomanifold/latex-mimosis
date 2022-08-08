@@ -211,13 +211,13 @@ If you want a small table of contents for each chapter, update
 \cohead{}
 \rohead*{\headmark}
 
-\newpairofpagestyles[scrheadings]{chapter}{%
+\newpairofpagestyles[scrheadings]{chapter}{
 	\KOMAoptions{headsepline=false,plainheadsepline=false}%
 	\ihead*{}%
 	\ohead*{}%
 }
 
-\newpairofpagestyles[scrheadings]{part}{%
+\newpairofpagestyles[scrheadings]{part}{
 	\KOMAoptions{headsepline=false,plainheadsepline=false}%
 	\ihead*{}%
 	\ohead*{}%
