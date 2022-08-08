@@ -3,8 +3,7 @@
 This repository contains a minimal & modern LaTeX template for
 dissertations and other university documents.
 
-For the impatient or curious: [this is what the template looks
-like](Thesis.pdf).
+For the impatient or curious: [this is what the template looks like](https://pseudomanifold.github.io/latex-mimosis/Thesis.pdf).
 You may also want to take a look at [my Ph.D. dissertation](http://bastian.rieck.me/research/Dissertation_Rieck_2017.pdf), which uses a predecessor of this template.
 
 # Users
