@@ -56,15 +56,12 @@
 % Fonts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifxetexorluatex
-  \usepackage{unicode-math}
-  \setmainfont{EB Garamond}
-  \setmathfont{Garamond Math}
-  \setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\usepackage[cmintegrals,cmbraces]{newtxmath}
+\usepackage{ebgaramond-maths}
+\ifpdftex
+  \usepackage[scale=0.8]{sourcecodepro}
 \else
-  \usepackage[lf]{ebgaramond}
-  \usepackage[oldstyle,scale=0.7]{sourcecodepro}
-  \singlespacing
+  \usepackage[scale=MatchLowercase]{sourcecodepro}
 \fi
 
 \newacronym[description={Principal component analysis}]{PCA}{PCA}{principal component analysis}
