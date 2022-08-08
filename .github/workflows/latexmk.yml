@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
 
       # This hack makes hspaans/latexmk-action use lualatex:
-      - run: echo "\$pdflatex = 'lualatex -file-line-error %O %S';" >> latexmkrc
+      #- run: echo "\$pdflatex = 'lualatex -file-line-error %O %S';" >> latexmkrc
 
       - name: Compile LateX
         uses: hspaans/latexmk-action@v1
