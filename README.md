@@ -13,11 +13,12 @@ looks in practice? The following documents have been typeset with this
 template&nbsp;(or a slightly modified variant of it):
 
 - S. Almasian, [Learning Joint Vector Representations of Words and Named Entities](https://github.com/satya77/Thesis_Entity_Embeddings/blob/master/MasterThesis_SatyaAlmasian.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
+- E. Angriman, [Scalable Algorithms for the Analysis of Massive Networks](https://edoc.hu-berlin.de/handle/18452/25013), Ph.D.&thinsp;thesis, Humboldt University of Berlin, 2022
+- C. Bock, [Motifs and Manifolds: Statistical and Topological Machine Learning for Characterising and Classifying Biomedical Time Series](https://www.research-collection.ethz.ch/handle/20.500.11850/524042), Ph.D.&thinsp;thesis, ETH Zurich, 2021
 - K. Hanser, [Visualization of Coherence in Meteorological Data](https://github.com/hanserK/master_thesis/blob/master/Thesis_Karsten_Hanser.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
 - M. Moor, [Machine Learning on Clinical Time Series: Classification and Representation
   Learning](https://www.research-collection.ethz.ch/handle/20.500.11850/532377), Ph.D.&thinsp;thesis, ETH Zurich, 2022
 - B. Rieck, [Persistent Homology in Multivariate Data Visualization](http://archiv.ub.uni-heidelberg.de/volltextserver/22914/1/Dissertation.pdf), Ph.D.&thinsp;thesis, Heidelberg University, 2017
-- E. Angriman, [Scalable Algorithms for the Analysis of Massive Networks](https://edoc.hu-berlin.de/handle/18452/25013), Ph.D.&thinsp;thesis, Humboldt University of Berlin, 2022
 
 Please open a pull request if you want your document to be listed here,
 and consider acknowledging this repository.
