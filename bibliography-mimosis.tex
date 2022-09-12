@@ -131,23 +131,35 @@
 
 \DeclareLanguageMapping{english}{english-mimosis}
 
-% This block produces clickable and colored author names whenever \textcite is used 
+% Make hyperlinks extend to the author name if `\textcite` is being used
+% instead of another cite command.
+
 \DeclareFieldFormat{citehyperref}{%
-  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
-  \bibhyperref{#1}}
+  % Need this to avoid nested links
+  \DeclareFieldAlias{bibhyperref}{noformat}%
+  \bibhyperref{#1}%
+}
+
 \DeclareFieldFormat{textcitehyperref}{%
-  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  % Need this to avoid nested links
+  \DeclareFieldAlias{bibhyperref}{noformat}%
   \bibhyperref{%
     #1%
     \ifbool{cbx:parens}
       {\bibcloseparen\global\boolfalse{cbx:parens}}
-      {}}}
+      {}%
+    }%
+}
+
 \savebibmacro{cite}
 \savebibmacro{textcite}
+
 \renewbibmacro*{cite}{%
   \printtext[citehyperref]{%
     \restorebibmacro{cite}%
-    \usebibmacro{cite}}}
+    \usebibmacro{cite}}%
+}
+
 \renewbibmacro*{textcite}{%
   \ifboolexpr{
     ( not test {\iffieldundef{prenote}} and
@@ -155,9 +167,10 @@
     or
     ( not test {\iffieldundef{postnote}} and
       test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
-  }
-    {\DeclareFieldAlias{textcitehyperref}{noformat}}
-    {}%
+  }%
+  {\DeclareFieldAlias{textcitehyperref}{noformat}}
+  {}%
   \printtext[textcitehyperref]{%
     \restorebibmacro{textcite}%
-    \usebibmacro{textcite}}} 
+    \usebibmacro{textcite}}%
+}
