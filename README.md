@@ -328,6 +328,11 @@ generic inquiries, please just open an issue in this repository.
 
 &mdash; [`utopcell` on Hacker News](https://news.ycombinator.com/item?id=16414851)
 
+> A dream to work with! A beautiful template that just works.
+
+&mdash; [Leslie O'Bray](https://leslieobray.com), whom I totally did not
+coerce into writing something nice about this template.
+
 # Contributors
 
 Here is a list of contributors:
