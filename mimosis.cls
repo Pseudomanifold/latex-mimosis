@@ -15,24 +15,19 @@
            toc=bibliography,
            toc=index,]{scrbook}
 
-\RequirePackage{ifpdf}
-\RequirePackage{ifxetex}
-\RequirePackage{ifluatex}
-
-\newif\ifxetexorluatex
+\RequirePackage{iftex}
+\newif\ifxetexorluatex\xetexorluatexfalse
 \ifxetex
   \xetexorluatextrue
-\else
-  \ifluatex
-    \xetexorluatextrue
-  \else
-    \xetexorluatexfalse
-  \fi
+\fi
+\ifluatex
+  \xetexorluatextrue
 \fi
 
 \ifxetexorluatex
   \RequirePackage{fontspec}
 \else
+  \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
 \fi
 
@@ -89,7 +84,6 @@
 
 \RequirePackage[%
   acronym,
-  automake,
   nogroupskip,
   nopostdot,
   nonumberlist,
@@ -163,15 +157,17 @@
 % Proper typesetting of units
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\RequirePackage[binary-units=true]{siunitx}
+\RequirePackage{siunitx}
 
 \sisetup{%
-  detect-all           = true,
-  detect-family        = true,
-  detect-mode          = true,
-  detect-shape         = true,
-  detect-weight        = true,
-  detect-inline-weight = math,
+  %mode                = match,
+  propagate-math-font = true,
+  reset-math-version  = false,
+  reset-text-family   = false,
+  reset-text-series   = false,
+  reset-text-shape    = false,
+  text-family-to-math = true,
+  text-series-to-math = true,
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
