@@ -330,8 +330,8 @@ generic inquiries, please just open an issue in this repository.
 
 > A dream to work with! A beautiful template that just works.
 
-&mdash; [Leslie O'Bray](https://leslieobray.com), whom I totally did not
-coerce into writing something nice about this template.
+&mdash; [Leslie O'Bray](https://leslieobray.com) (who was totally not
+coerced into writing something nice about this template)
 
 # Contributors
 
