@@ -72,6 +72,7 @@ system. For instance, you might want to use the following combination:
 \setmonofont[Scale=MatchLowercase]{IBM Plex Mono}
 \end{verbatim}
 %
+\ifxetexorluatex
 If these fonts exist on your system, your normal text will look
 {\fontspec{Libre Baskerville}{a little bit different from the other font used
 in this example PDF}}, while your sans-serif font {\fontspec[Scale=MatchLowercase]{IBM Plex Sans}will 
@@ -80,6 +81,7 @@ pair nicely with your} {\fontspec[Scale=MatchLowercase]{IBM Plex Mono}{monospace
 You can also remove the \verb|Scale| directive, but I find that most
 fonts pair better if they are adjusted in size a little bit. Experiment
 with it until you finds a combination that you enjoy.
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Features}
