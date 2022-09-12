@@ -335,10 +335,11 @@ Here is a list of contributors:
 - [Nikos Antoniadis (nikosantoniadis)](https://github.com/nikosantoniadis): mini-TOC extension
 - [bottom-bracket](https://github.com/bottom-bracket): `automake` and `standalone` compatibility improvements
 - [Giuseppe (giuscri)](https://github.com/giuscri): improved cleanup operations
+- [Jannis Born (jannisborn)](https://github.com/jannisborn): extended hyperlinks for `\textcite` commands
 - Carlo Botha: fixed `\supercite` for `chem-angew` citation style
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Michaël Defferrard (mdeff)](https://github.com/mdeff): matching fonts for mathematics and text
-- [Holger Dell (holgerdell)](https://github.com/holgerdell): numerous simplifications of the main template; compatibility updates
+- [Holger Dell (holgerdell)](https://github.com/holgerdell): numerous simplifications of the main template; compatibility updates; automated publishing workflow
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
 - [Diego A. Rodriquez (diarodriguezva)](https://github.com/diarodriguezv): support with `ebgaramond` updates
 - [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes; `hyperref` fixes
