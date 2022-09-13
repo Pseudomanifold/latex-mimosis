@@ -308,6 +308,15 @@ please let me know!
    the `unicode-math` package can be used, for instance. (See [issue
    #33](https://github.com/Pseudomanifold/latex-mimosis/issues/33) for
    a brief discussion)
+   
+6. How can I remove the indent in the second line (and all following ones) of Table/Figure captions? \
+   \
+   In `mimosis.cls` change `\captionsetup{subrefformat=parens}` to:
+   ```tex
+   \captionsetup{subrefformat=parens,format=plain}
+   ```
+   For details see [here](https://latex-tutorial.com/caption-customization-latex/).
+   
 
 # Contributing
 
