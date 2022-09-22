@@ -15,6 +15,7 @@ template&nbsp;(or a slightly modified variant of it):
 - S. Almasian, [Learning Joint Vector Representations of Words and Named Entities](https://github.com/satya77/Thesis_Entity_Embeddings/blob/master/MasterThesis_SatyaAlmasian.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
 - E. Angriman, [Scalable Algorithms for the Analysis of Massive Networks](https://edoc.hu-berlin.de/handle/18452/25013), Ph.D.&thinsp;thesis, Humboldt University of Berlin, 2022
 - C. Bock, [Motifs and Manifolds: Statistical and Topological Machine Learning for Characterising and Classifying Biomedical Time Series](https://www.research-collection.ethz.ch/handle/20.500.11850/524042), Ph.D.&thinsp;thesis, ETH Zurich, 2021
+- A. Coín, [Bayesian RKHS-based methods in functional regression](https://github.com/antcc/tfm/releases/download/v1.1/masters-thesis.pdf), M.Sc.&thinsp;thesis, Autonomous University of Madrid, 2022
 - K. Hanser, [Visualization of Coherence in Meteorological Data](https://github.com/hanserK/master_thesis/blob/master/Thesis_Karsten_Hanser.pdf), M.Sc.&thinsp;thesis, Heidelberg University, 2018
 - M. Moor, [Machine Learning on Clinical Time Series: Classification and Representation
   Learning](https://www.research-collection.ethz.ch/handle/20.500.11850/532377), Ph.D.&thinsp;thesis, ETH Zurich, 2022
