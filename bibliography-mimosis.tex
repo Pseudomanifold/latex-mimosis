@@ -124,9 +124,10 @@
 
 % Make the font size of citations smaller. Depending on your selected
 % font, you might not need this.
+\usepackage{relsize}
 \renewcommand*{\citesetup}{%
   \biburlsetup
-  \small
+  \relsize{-.5}%
 }
 
 \DeclareLanguageMapping{english}{english-mimosis}
