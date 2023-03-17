@@ -317,7 +317,11 @@ please let me know!
    \captionsetup{subrefformat=parens,format=plain}
    ```
    For details see [here](https://latex-tutorial.com/caption-customization-latex/).
-   
+
+7. How can I update the font size of citations? \
+   \
+   Check out `bibliography-mimosis.tex` and update or remove
+   the `\renewcommand*{\citesetup}` block to your preference.
 
 # Contributing
 
@@ -355,6 +359,7 @@ Here is a list of contributors:
 - [Miloslav Číž (drummyfish)](https://github.com/drummyfish): grammar/style corrections for `README` file
 - [Michaël Defferrard (mdeff)](https://github.com/mdeff): matching fonts for mathematics and text
 - [Holger Dell (holgerdell)](https://github.com/holgerdell): numerous simplifications of the main template; compatibility updates; automated publishing workflow
+- [Florian Graf (f-graf)](https://github.com/f-graf): numerous font style and font size improvements
 - [Bastian Rieck (Pseudomanifold)](https://github.com/Pseudomanifold): original creator and maintainer
 - [Diego A. Rodriquez (diarodriguezva)](https://github.com/diarodriguezv): support with `ebgaramond` updates
 - [TonyY](https://github.com/toooonyy): `latexmkrc` updates and fixes; `hyperref` fixes
