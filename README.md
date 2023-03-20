@@ -323,6 +323,12 @@ please let me know!
    Check out `bibliography-mimosis.tex` and update or remove
    the `\renewcommand*{\citesetup}` block to your preference.
 
+8. I do not like some of the mathematical symbols. How can I change them? \
+   \
+   You should be using `fontspec` and see whether your selected font
+   supports `StylisticSet`. See [`garamond-math`](https://ctan.org/pkg/garamond-math)
+   for an example.
+
 # Contributing
 
 If you require additional features, find some bugs, or just have some
