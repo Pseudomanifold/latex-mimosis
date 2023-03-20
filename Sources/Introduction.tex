@@ -83,6 +83,17 @@ fonts pair better if they are adjusted in size a little bit. Experiment
 with it until you finds a combination that you enjoy.
 \fi
 
+\XeLaTeX and \LuaLaTeX also offer you a way to change the font that is
+used for mathematical equations. If installed, the
+\href{https://ctan.org/pkg/garamond-math}{\texttt{garamond-math}}
+package permits you to choose from different stylistic sets that
+slightly change how certain mathematical symbols look. For instance, the
+following command changes `Fraktur' symbols:
+%
+\begin{verbatim}
+\setmathfont{Garamond-Math.otf}[StylisticSet={6}]
+\end{verbatim}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Features}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
