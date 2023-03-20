@@ -59,9 +59,19 @@
 \ifxetexorluatex
   \usepackage{unicode-math}
   \setmainfont{EB Garamond}
-  \setmathfont{Garamond Math}%[StylisticSet={6,7,8,9,10}] 
-  %load missing symbols from other font
-  \setmathfont{STIX Two Math}[range={\sharp, \natural, \flat, \clubsuit, \spadesuit, \checkmark}]
+  \setmathfont{Garamond Math}
+
+  % Load some missing symbols from another font.
+  \setmathfont{STIX Two Math}[%
+    range = {
+      \sharp,
+      \natural,
+      \flat,
+      \clubsuit,
+      \spadesuit,
+      \checkmark
+    }
+  ]
   \setmonofont[Scale=MatchLowercase]{Source Code Pro}
 \else
   \usepackage[lf]{ebgaramond}
