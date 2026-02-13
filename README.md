@@ -20,6 +20,7 @@ template&nbsp;(or a slightly modified variant of it):
 - M. Moor, [Machine Learning on Clinical Time Series: Classification and Representation
   Learning](https://www.research-collection.ethz.ch/handle/20.500.11850/532377), Ph.D.&thinsp;thesis, ETH Zurich, 2022
 - B. Rieck, [Persistent Homology in Multivariate Data Visualization](http://archiv.ub.uni-heidelberg.de/volltextserver/22914/1/Dissertation.pdf), Ph.D.&thinsp;thesis, Heidelberg University, 2017
+- T. Bunn, [Enhancing Python Programming Education Through Creative Computing Environments](https://raw.githubusercontent.com/tabreturn/phd-latex/main/compiled-thesis.pdf), Ph.D.&thinsp;thesis, Torrens University Australia, 2025
 
 Please open a pull request if you want your document to be listed here,
 and consider acknowledging this repository.
