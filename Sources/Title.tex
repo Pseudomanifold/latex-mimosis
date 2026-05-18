@@ -6,9 +6,11 @@
       \@title
     \end{Huge}\\[0.1cm]
     %
-    \begin{Large}
-      \@subtitle
-    \end{Large}\\
+    \ifdefempty{\@subtitle}{}{%
+      \begin{Large}
+        \@subtitle
+      \end{Large}\\
+    }
     %
     \emph{by}\\
     \@author\space(with the help of many others!)
